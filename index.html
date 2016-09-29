@@ -1,0 +1,81 @@
+<head>
+    <title>Rime 設定</title>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <script type="text/javascript" src="./rime_settings.js"></script>
+    <style type="text/css"> #content * {display: block; } label {font-size: 1.2rem; } span.description {font-size: 10px; color: darkslategrey; } .left, .right {float: left; margin: 1rem; width: 100%; max-width: 20rem; } .setting-item {margin: 10px; padding: 5px; } div.console.right > pre {margin-left: 1rem; padding-top: 20px; } .setting-item > span, .setting-item > label {margin: 3px auto; } div.console {position: fixed; bottom: 1%; left: 22rem; z-index: 999; border-left: 2px solid #eee; height: 100%; max-height: 95%; } .s{color: #bbb; font-size: 14px;}
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div class="left">
+            <div class="billboard">
+                <a href="https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md">设定项速查手册</a>
+            </div>
+
+            <div class="setting-item">
+                <label>Control & Shift 键的功能</label>
+                <span class="description">用法见https://gist.github.com/lotem/2981316</span>
+                <label class="s">设定左边 Shift键</label>
+                <select name="ascii_composer/switch_key/Shift_L">
+                    <option></option>
+                    <option value="inline_ascii">inline_ascii</option>
+                    <option value="clear">清除且不上屏已输入的编码并切换至西文输入模式</option>
+                    <option value="commit_text">已输入的候选文字上屏并切换至西文输入模式</option>
+                    <option value="commit_code">已输入的编码字符上屏并切换至西文输入模式</option>
+                    <option value="noop">屏蔽该切换键</option>
+                </select>
+                <label  class="s">设定右边 Shift键</label>
+                <select name="ascii_composer/switch_key/Shift_R">
+                    <option></option>
+                    <option value="inline_ascii">inline_ascii</option>
+                    <option value="clear">清除且不上屏已输入的编码并切换至西文输入模式</option>
+                    <option value="commit_text">已输入的候选文字上屏并切换至西文输入模式</option>
+                    <option value="commit_code">已输入的编码字符上屏并切换至西文输入模式</option>
+                    <option value="noop">屏蔽该切换键</option>
+                </select>
+                <label  class="s">设定左边 Control键</label>
+                <select name="ascii_composer/switch_key/Control_R">
+                    <option></option>
+                    <option value="inline_ascii">inline_ascii</option>
+                    <option value="clear">清除且不上屏已输入的编码并切换至西文输入模式</option>
+                    <option value="commit_text">已输入的候选文字上屏并切换至西文输入模式</option>
+                    <option value="commit_code">已输入的编码字符上屏并切换至西文输入模式</option>
+                    <option value="noop">屏蔽该切换键</option>
+                </select>
+                <label  class="s">设定右边 Control键</label>
+                <select name="ascii_composer/switch_key/Control_R">
+                    <option></option>
+                    <option value="inline_ascii">inline_ascii</option>
+                    <option value="clear">清除且不上屏已输入的编码并切换至西文输入模式</option>
+                    <option value="commit_text">已输入的候选文字上屏并切换至西文输入模式</option>
+                    <option value="commit_code">已输入的编码字符上屏并切换至西文输入模式</option>
+                    <option value="noop">屏蔽该切换键</option>
+                </select>
+            <!--  <div class="setting-item">
+                <label>字体设定</label>
+                <span class="description">显示界面的字体大小</span>
+                <input type="text" name="style/font_face">
+            </div> -->
+            <!-- <div class="setting-item">
+                <label>字号设定</label>
+                <span class="description">显示界面的字体大小</span>
+                <input type="number" name="style/font_point">
+            </div> -->
+            <!-- <div class="setting-item">
+                <label>显示方式</label>
+                <span class="description">显示界面的字体大小</span>
+                <select name="style/horizontal">
+                    <option value="true">候选横排</option>
+                    <option value="false">候选直排</option>
+                </select>
+            </div> -->
+            </div>
+
+        </div>
+        <div class="console right">
+            <pre>ready.</pre>
+        </div>
+    </div>
+    <script type="text/javascript" src="./common.js"> </script>
+ </body>
